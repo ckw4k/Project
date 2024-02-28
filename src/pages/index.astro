@@ -1,5 +1,9 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 
+const pageTitle = 'Home Page';
 ---
 
 <html lang="en">
@@ -11,9 +15,9 @@
 		<title>My Astro Page</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-		<h1>Hello, this is my first Astro site &#128151</h1>
+		<Header />
+		<h1>{pageTitle}</h1>
+		<p>Hello, this is my first Astro site &#128151</p>
 	</body>
+	<Footer />
 </html>
